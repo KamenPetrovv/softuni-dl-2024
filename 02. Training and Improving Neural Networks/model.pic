@@ -1,0 +1,112 @@
+#  Creator: graphviz version 2.50.0 (0)
+#  Title: G
+#  save point size and font
+.nr .S \n(.s
+.nr DF \n(.f
+.PS 4.43056 17.90278
+#  to change drawing size, multiply the width and height on the .PS line above and the number on the two lines below (rounded to the nearest integer) by a scale factor
+.nr SF 4431
+scalethickness = 4431
+#  don't change anything below this line in this drawing
+#  non-fatal run-time pic version determination, version 2
+boxrad=2.0 #  will be reset to 0.0 by gpic only
+scale=1.0 #  required for comparisons
+#  boxrad is now 0.0 in gpic, else it remains 2.0
+#  dashwid is 0.1 in 10th Edition, 0.05 in DWB 2 and in gpic
+#  fillval is 0.3 in 10th Edition (fill 0 means black), 0.5 in gpic (fill 0 means white), undefined in DWB 2
+#  fill has no meaning in DWB 2, gpic can use fill or filled, 10th Edition uses fill only
+#  DWB 2 doesn't use fill and doesn't define fillval
+#  reset works in gpic and 10th edition, but isn't defined in DWB 2
+#  DWB 2 compatibility definitions
+if boxrad > 1.0 && dashwid < 0.075 then X
+	fillval = 1;
+	define fill Y Y;
+	define solid Y Y;
+	define reset Y scale=1.0 Y;
+X
+reset #  set to known state
+#  GNU pic vs. 10th Edition d\(e'tente
+if fillval > 0.4 then X
+	define setfillval Y fillval = 1 - Y;
+	define bold Y thickness 2 Y;
+	#  if you use gpic and it barfs on encountering "solid",
+	# 	install a more recent version of gpic or switch to DWB or 10th Edition pic;
+	# 	sorry, the groff folks changed gpic; send any complaint to them;
+X else Z
+	define setfillval Y fillval = Y;
+	define bold Y Y;
+	define filled Y fill Y;
+Z
+#  arrowhead has no meaning in DWB 2, arrowhead = 7 makes filled arrowheads in gpic and in 10th Edition
+#  arrowhead is undefined in DWB 2, initially 1 in gpic, 2 in 10th Edition
+arrowhead = 7 #  not used by graphviz
+#  GNU pic supports a boxrad variable to draw boxes with rounded corners; DWB and 10th Ed. do not
+boxrad = 0 #  no rounded corners in graphviz
+#  GNU pic supports a linethick variable to set line thickness; DWB and 10th Ed. do not
+linethick = 0; oldlinethick = linethick
+#  .PS w/o args causes GNU pic to scale drawing to fit 8.5x11 paper; DWB does not
+#  maxpsht and maxpswid have no meaning in DWB 2.0, set page boundaries in gpic and in 10th Edition
+#  maxpsht and maxpswid are predefined to 11.0 and 8.5 in gpic
+maxpsht = 17.902778
+maxpswid = 4.430556
+Dot: [
+define attrs0 % %; define unfilled % %; define rounded % %; define diagonals % %
+move to (0, 0); line to (0, 1289); line to (319, 1289); line to (319, 0); line to (0, 0)
+#  140477303546000
+move to (11, 1151); line to (11, 1276); line to (308, 1276); line to (308, 1151); line to (11, 1151)
+move to (11, 1151); line to (11, 1276); line to (308, 1276); line to (308, 1151); line to (11, 1151)
+move to (18, 1156); line to (18, 1269); line to (304, 1269); line to (304, 1156); line to (18, 1156)
+move to (18, 1156); line to (18, 1269); line to (304, 1269); line to (304, 1156); line to (18, 1156)
+.ft H 
+.ps 16*\n(SFu/4431u
+"InputLayer" at (48.08317,1198.96296);
+#  140477303540720
+move to (51, 924); line to (51, 1049); line to (268, 1049); line to (268, 924); line to (51, 924)
+move to (51, 924); line to (51, 1049); line to (268, 1049); line to (268, 924); line to (51, 924)
+move to (57, 928); line to (57, 1042); line to (263, 1042); line to (263, 928); line to (57, 928)
+move to (57, 928); line to (57, 1042); line to (263, 1042); line to (263, 928); line to (57, 928)
+"Flatten" at (87.24571,971.18519);
+#  140477303546000->140477303540720
+move to (160, 1150); spline to (160, 1145); spline to (160, 1131); spline to (160, 1114); spline to (160, 1096); spline to (160, 1082); spline to (160, 1077)
+move to (169, 1077); line to (160, 1049); line to (150, 1077); line to (169, 1077)
+#  140477303538848
+move to (57, 696); line to (57, 821); line to (263, 821); line to (263, 696); line to (57, 696)
+move to (57, 696); line to (57, 821); line to (263, 821); line to (263, 696); line to (57, 696)
+move to (62, 700); line to (62, 814); line to (257, 814); line to (257, 700); line to (62, 700)
+move to (62, 700); line to (62, 814); line to (257, 814); line to (257, 700); line to (62, 700)
+"Dense" at (93.35650,743.40741);
+#  140477303540720->140477303538848
+move to (160, 923); spline to (160, 917); spline to (160, 904); spline to (160, 886); spline to (160, 868); spline to (160, 855); spline to (160, 849)
+move to (169, 849); line to (160, 821); line to (150, 849); line to (169, 849)
+#  140477303537792
+move to (57, 468); line to (57, 593); line to (263, 593); line to (263, 468); line to (57, 468)
+move to (57, 468); line to (57, 593); line to (263, 593); line to (263, 468); line to (57, 468)
+move to (62, 472); line to (62, 586); line to (257, 586); line to (257, 472); line to (62, 472)
+move to (62, 472); line to (62, 586); line to (257, 586); line to (257, 472); line to (62, 472)
+"Dense" at (93.35650,515.62963);
+#  140477303538848->140477303537792
+move to (160, 695); spline to (160, 689); spline to (160, 676); spline to (160, 658); spline to (160, 640); spline to (160, 627); spline to (160, 621)
+move to (169, 621); line to (160, 594); line to (150, 621); line to (169, 621)
+#  140477303541488
+move to (57, 240); line to (57, 365); line to (263, 365); line to (263, 240); line to (57, 240)
+move to (57, 240); line to (57, 365); line to (263, 365); line to (263, 240); line to (57, 240)
+move to (62, 244); line to (62, 358); line to (257, 358); line to (257, 244); line to (62, 244)
+move to (62, 244); line to (62, 358); line to (257, 358); line to (257, 244); line to (62, 244)
+"Dense" at (93.35650,287.85185);
+#  140477303537792->140477303541488
+move to (160, 467); spline to (160, 462); spline to (160, 448); spline to (160, 430); spline to (160, 413); spline to (160, 399); spline to (160, 394)
+move to (169, 394); line to (160, 366); line to (150, 394); line to (169, 394)
+#  140477303540912
+move to (57, 13); line to (57, 138); line to (263, 138); line to (263, 13); line to (57, 13)
+move to (57, 13); line to (57, 138); line to (263, 138); line to (263, 13); line to (57, 13)
+move to (62, 17); line to (62, 131); line to (257, 131); line to (257, 17); line to (62, 17)
+move to (62, 17); line to (62, 131); line to (257, 131); line to (257, 17); line to (62, 17)
+"Dense" at (93.35650,60.07407);
+#  140477303541488->140477303540912
+move to (160, 239); spline to (160, 234); spline to (160, 220); spline to (160, 203); spline to (160, 185); spline to (160, 171); spline to (160, 166)
+move to (169, 166); line to (160, 138); line to (150, 166); line to (169, 166)
+]
+.PE
+#  restore point size and font
+.ps \n(.S
+.ft \n(DF
